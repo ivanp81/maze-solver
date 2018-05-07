@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 import com.example.maze.solver.domain.Coordinate;
 import com.example.maze.solver.domain.Maze;
@@ -18,7 +19,7 @@ public class BFSAlgorithm implements SearchAlgorithm {
     
     public List<Coordinate> apply(Maze maze) {
 
-	LinkedList<Coordinate> nextToVisit = new LinkedList<>();
+	Queue<Coordinate> nextToVisit = new LinkedList<>();
 	Coordinate start = maze.getStart();
 	nextToVisit.add(start);
 
