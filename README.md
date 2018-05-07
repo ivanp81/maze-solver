@@ -45,6 +45,7 @@ Example file:
 1 0 1 0 0 0 0 0 0 1  
 1 1 1 1 1 1 1 1 1 1  
 
+
 # How to execute
 
 From the project root run:
@@ -57,3 +58,4 @@ mvn clean package
 - A test for every input file will be executed
 - Every test print the resulting maze
 - A maze without solution is provided
+- A maze without wall is provided

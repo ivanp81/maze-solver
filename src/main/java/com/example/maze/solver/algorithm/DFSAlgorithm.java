@@ -40,8 +40,8 @@ public class DFSAlgorithm implements SearchAlgorithm {
         }
 
         for (int[] direction : DIRECTIONS) {
-            Coordinate coordinate = getNextCoordinate(row, col, direction[0], direction[1]);
-            if (pathExists(maze, coordinate.getX(), coordinate.getY(), path)) {
+            Coordinate neighbor = getNeighbor(row, col, direction[0], direction[1]);
+            if (pathExists(maze, neighbor.getX(), neighbor.getY(), path)) {
                 return true;
             }
         }
@@ -50,7 +50,7 @@ public class DFSAlgorithm implements SearchAlgorithm {
         return false;
     }
 
-    private Coordinate getNextCoordinate(int row, int col, int i, int j) {
+    private Coordinate getNeighbor(int row, int col, int i, int j) {
         return new Coordinate(row + i, col + j);
     }
 }
