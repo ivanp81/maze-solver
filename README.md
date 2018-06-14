@@ -51,7 +51,7 @@ Example file:
 From the project root run:
 
 ```
-mvn clean package
+mvn clean test
 ```
 
 #### Note
