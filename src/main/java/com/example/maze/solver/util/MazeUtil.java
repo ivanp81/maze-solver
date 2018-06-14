@@ -14,7 +14,6 @@ public class MazeUtil {
 
     private static String fileAsText(File file) throws FileNotFoundException {
 	String fileText = "";
-
 	try (Scanner input = new Scanner(file)) {
 	    while (input.hasNextLine()) {
 		fileText += input.nextLine() + "\n";
