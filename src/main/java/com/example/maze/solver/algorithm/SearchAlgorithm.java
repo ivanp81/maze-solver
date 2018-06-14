@@ -7,6 +7,5 @@ import com.example.maze.solver.domain.Maze;
 
 
 public interface SearchAlgorithm {
-
     public List<Coordinate> apply(Maze maze);
 }
